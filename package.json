@@ -1,0 +1,22 @@
+{
+  "name": "the-drp-backend",
+  "version": "1.0.0",
+  "description": "API for THE DRP Shopping App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "creative",
+    "codint",
+    "postgres",
+    "express",
+    "forum",
+    "shopping"
+  ],
+  "author": "Kerridene Small",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
