@@ -1,7 +1,6 @@
 const express = require('express');
 const designers = express.Router();
 
-const clothingControllers = require("./clothingControllers");
 
 const {
     // getAllDesignersByClothing,
@@ -13,7 +12,7 @@ const {
     getDesignerByClothingId,
 } = require("../queries/designers.js");
 
-designers.use("/clothing", clothingControllers);
+// designers.use("/clothing", clothingControllers);
 
 // Get all designers
 designers.get("/", async (req, res) => {

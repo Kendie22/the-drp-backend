@@ -2,7 +2,8 @@ const express = require("express");
 const cors = require("cors");
 
 
-const designerControllers = require("./controllers/designerController.js")
+const designerControllers = require("./controllers/designerController")
+const clothingControllers = require("./controllers/clothingControllers");
 
 //configuration
 const app = express();
@@ -18,6 +19,8 @@ app.get("/", (req, res) => {
 
 
 app.use("/designers", designerControllers);
+app.use("/clothing", clothingControllers);
+
 
 app.get("*", (req, res) => {
     res.status(404).send("Page not found");

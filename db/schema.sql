@@ -19,7 +19,7 @@ CREATE TABLE designers (
 -- clothing line 
 CREATE TABLE clothing (
    clothing_id SERIAL PRIMARY KEY,
-   designer_id INTEGER REFERENCES designers(designer_id),
+   designer_id INTEGER NOT NULL REFERENCES designers(designer_id) ON DELETE CASCADE,
    style TEXT NOT NULL, 
    color TEXT NOT NULL, 
    size INTEGER DEFAULT 7, 

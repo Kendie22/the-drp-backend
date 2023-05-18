@@ -49,7 +49,12 @@ clothing.put("/clothing_id", async (req, res) => {
 clothing.delete("/:clothing_id", async (req, res) => {
     const { clothing_id } = req.params;
     const deletedClothing = await deleteClothing(clothing_id);
-    res.json(deletedClothing);
+    if ({ error }) {
+        console.log(error);
+        return res.status(500).json({ error: "server error" });
+    } else {
+        return res.status(200).json({ deletedClothing })
+    }
 });
 
 module.exports = clothing;

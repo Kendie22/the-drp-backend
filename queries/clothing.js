@@ -53,8 +53,9 @@ const createClothing = async (clothing) => {
 const updateClothing = async (clothing_id, clothing) => {
     try {
         const updatedClothing = await db.one(
-            "UPDATE clothing SET style = $1, color = $2, size = $3, is_recycled_item = $4, material = $5, price = $6, ranking = $7, image = $8 WHERE clothing_id = $9 RETURNING *",
+            "UPDATE clothing SET designer_id = $1, style = $2, color = $3, size = $4, is_recycled_item = $5, material = $6, price = $7, ranking = $8, image = $9 WHERE clothing_id = $10 RETURNING *",
             [
+                clothing.designer_id,
                 clothing.style,
                 clothing.color,
                 clothing.size,
@@ -68,7 +69,7 @@ const updateClothing = async (clothing_id, clothing) => {
         );
         return updatedClothing;
     } catch (error) {
-        return { error: error };
+        return { error: "server error" };
     }
 };
 
@@ -102,12 +103,12 @@ const getAllDesignersByClothing = async (clothing_id) => {
 const deleteClothing = async (clothing_id) => {
     try {
         const deletedClothing = await db.one(
-            "DELETE FROM clothing WHERE id = $1 RETURNING *",
+            "DELETE FROM clothing WHERE clothing_id = $1 RETURNING *",
             clothing_id
         );
         return deletedClothing;
     } catch (error) {
-        return { error: error };
+        return { error: "server error" };
     }
 };
 
