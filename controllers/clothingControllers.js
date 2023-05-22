@@ -21,6 +21,7 @@ clothing.get("/", async (req, res) => {
 // Get one clothing
 clothing.get("/:clothing_id", async (req, res) => {
     const { clothing_id } = req.params;
+    // console.log(clothing_id)
     const clothingItem = await getClothingById(clothing_id);
     res.json(clothingItem);
 });

@@ -18,7 +18,7 @@ const getAllClothing = async (req, res) => {
 const getClothingById = async (clothing_id) => {
     try {
         const oneClothingItem = await db.one(
-            "SELECT * FROM clothing WHERE clothing_id = $1", [clothing_id]
+            "SELECT c.*, d.brand_name FROM clothing c JOIN designers d ON (c.designer_id = d.designer_id) WHERE clothing_id = $1", [clothing_id]
         );
         return oneClothingItem;
     } catch (error) {
