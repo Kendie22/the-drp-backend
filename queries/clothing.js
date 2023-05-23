@@ -11,7 +11,7 @@ const getAllClothing = async (req, res) => {
             "SELECT * FROM clothing");
         return allClothing;
     } catch (error) {
-        return { error };
+        return { error: error };
     }
 };
 
