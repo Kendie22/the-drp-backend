@@ -26,4 +26,4 @@ VALUES
     (7, 'Dress', 'Multi-colored', 4, false, 'Knit', 1125, 7, 'https://media.bergdorfgoodman.com/f_auto,q_auto:low,ar_5:7,c_fill,dpr_2.0,w_720/01/bg_4440880_100010_m'),
     (8, 'Dress', 'White', 5, true, 'Knit', 945, 8, 'https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/sjean/sjean302351c925/sjean302351c925_1680014554495_2-0._UX846_FMwebp_.jpg'),
     (9, 'Hoodie', 'Black', 5, false, 'Cotton', 1305, 14, 'https://cdn-images.farfetch-contents.com/19/77/93/70/19779370_44494120_1000.jpg?c=3'),
-    (10, 'Shirt', 'Black and White', 5, false, 'Leather', 304, 3, 'https://is4.fwrdassets.com/images/p/fw/z/LQNS-WS40_V1.jpg');
+  
