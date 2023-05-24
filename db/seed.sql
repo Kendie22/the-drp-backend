@@ -9,7 +9,8 @@ VALUES
     ('Telfar', 'Clemens','Telfar', 10, true, 'USA', 'Mid-range', 'https://wwd.com/wp-content/uploads/2018/02/telfar_clemmens_gc_51.jpg' ),
     ('Carly', 'Cushnie','Cushine', 10, false, 'USA', 'High-end', 'https://cdn.shopify.com/s/files/1/1031/5525/articles/Carly_Cushnie_Portraits_043-2_1024x1024.jpg?v=1606248154' ),
     ('Ozwald', 'Boateng', 'Ozwald Boateng', 30, false, 'United Kingdom', 'High-end', 'https://images.squarespace-cdn.com/content/v1/56ec32ddc2ea51bd674b7933/1467753781977-T5VO8KPZ2D21TDT722PV/image-asset.jpeg?format=1000w'),
-    ('Grace', 'Wales Bonner', 'Wales Bonner', 5, true, 'United Kingdom', 'Luxury','https://www.washingtonpost.com/resizer/r1OEGYp5EFSGM9HWld7JHg158rY=/arc-anglerfish-washpost-prod-washpost/public/TBARKWLODRA7BMSLKXZQYPUR7Q.jpg');
+    ('Grace', 'Wales Bonner', 'Wales Bonner', 5, true, 'United Kingdom', 'Luxury','https://www.washingtonpost.com/resizer/r1OEGYp5EFSGM9HWld7JHg158rY=/arc-anglerfish-washpost-prod-washpost/public/TBARKWLODRA7BMSLKXZQYPUR7Q.jpg'),
+    ('Christopher', 'John Rogers', 'Christopher John Rogers', 5, false, 'United States', 'High-end', 'https://pyxis.nymag.com/v1/imgs/76c/c7b/b2ea8822ca4bbc2d900bd34e2d6100c227-CJR-Shikeith-01.rvertical.w570.jpg');
 
 INSERT INTO clothing (designer_id, style, color, size, is_recycled_item, material, price, ranking, image)
 VALUES 
@@ -18,4 +19,5 @@ VALUES
     (3, 'Handbag', 'Yellow', 0, false, 'Plastic', 202, 3, 'https://cdn.shopify.com/s/files/1/0880/7204/products/TELFAR-MEDIUM-HIGHLIGHTER-YELLOW-SHOPPING-BAG-HERO_2048x2048.jpg?v=1654881100'),
     (4, 'Jumpsuit', 'Black and White', 12, false, 'Silk', 493, 4, 'https://media.bergdorfgoodman.com/f_auto,q_auto/01/bg_3034017_100188_m'),
     (5, 'Shirt', 'Brown', 8, true, 'Leather', 399, 5, 'https://images.squarespace-cdn.com/content/v1/6169c88e4d8ab0099aaf6e31/1676472402138-RB30IKYH1FO960B3PSP9/10+copy.jpg?format=750w'),
-    (6, 'Dress', 'Mutli-colored', 9, true, 'cotton', 500, 6, 'https://www.net-a-porter.com/variants/images/1647597289730919/in/w920_q60.jpg');
+    (6, 'Dress', 'Mutli-colored', 9, true, 'Cotton', 500, 6, 'https://www.net-a-porter.com/variants/images/1647597289730919/in/w920_q60.jpg'),
+    (7, 'Dress', 'Multi-colored', 4, false, 'Knit', 1125, 7, 'https://media.bergdorfgoodman.com/f_auto,q_auto:low,ar_5:7,c_fill,dpr_2.0,w_720/01/bg_4440880_100010_m');
